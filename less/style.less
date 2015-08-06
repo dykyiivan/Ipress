@@ -1,0 +1,163 @@
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.btn-group  {
+	outline: none;
+}
+
+@white: #fff;
+@font-family: Roboto, sans-serif;
+
+/* Header */
+header {
+	.top-header {
+		background: #1d1e20;
+		.breaking-news{
+			padding: 15px 0;
+			.fq {
+				background: url(../images/fq-icon.png) no-repeat center;
+				display: block;
+				float: left;
+				height: 23px; 
+				width: 23px;
+			    position: relative;
+    			top: 0;
+				}
+				.news-top-header {
+					color: @white;
+					font-family: @font-family;
+					font-size: 12px;
+				    padding: 3px 0 0 30px;
+    				margin: 0;
+				}
+		}
+		.date {
+			.float-left;
+			padding: 10px 20px 10px 0;
+			.btn-default {
+				background: #242527;
+				border: none;
+				color: #c0c0c0;
+				font-family: @font-family;
+				font-size: 12px;
+				outline: none;
+			}
+		}
+	}
+}
+
+.fq {
+	display: block;
+	float: left;
+	padding-right: 10px;
+}
+.social {
+    float: left;
+    margin: 0;
+    padding: 15px 12px;
+    position:  relative;
+    .social-item {
+		.float-left;
+		list-style: none;
+		.dribbble,
+		.facebook,
+		.google,
+		.rss, 
+		.twitter {
+			color: #818181;
+			padding: 8px;
+		}
+		.dribbble:hover,
+		.facebook:hover,
+		.google:hover,
+		.rss:hover, 
+		.twitter:hover {
+			background: #325c94;
+			border-radius: 5px;
+			color: @white;
+			padding: 8px;
+		}
+	}
+
+}
+.social:after {
+	background: url(../images/border-social.jpg);
+    clear: both;
+    content: "";
+    display: table;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+}
+.social:before {
+	background: url(../images/border-social.jpg);
+    clear: both;
+    content: "";
+    display: table;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+.lang {
+	background: #1d1e20;
+	border: none;
+	left: 10px;
+    top: 6px;
+}
+.lang:hover {
+	background: #27292e;
+}
+
+.main-header {
+	background: #fff;
+	padding: 35px 0;
+	.logo {
+		padding-top: 20px;
+		.slogan {
+			color: #777777;
+			font-family: @font-family;
+		}
+	}
+}
+
+/* Navigation */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+	background: #e84a4a;
+    border-radius: 0; 
+}
+
+nav {
+    border-bottom: 2px solid #e84a4a;
+	ul {
+		li {
+			a {
+				color: #dddddd;
+				font-family: @font-family;
+				font-size: 19px;
+				
+			}
+	
+		}
+	} 
+}
+
+
+.nav-pills li a {
+	padding: 20px;
+	&:hover {
+		background: #e84a4a;
+		color: #fff;
+		border-radius: 0;
+	}
+}

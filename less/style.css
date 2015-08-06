@@ -1,0 +1,142 @@
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.btn-group {
+  outline: none;
+}
+/* Header */
+header .top-header {
+  background: #1d1e20;
+}
+header .top-header .breaking-news {
+  padding: 15px 0;
+}
+header .top-header .breaking-news .fq {
+  background: url(../images/fq-icon.png) no-repeat center;
+  display: block;
+  float: left;
+  height: 23px;
+  width: 23px;
+  position: relative;
+  top: 0;
+}
+header .top-header .breaking-news .news-top-header {
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  padding: 3px 0 0 30px;
+  margin: 0;
+}
+header .top-header .date {
+  float: left;
+  padding: 10px 20px 10px 0;
+}
+header .top-header .date .btn-default {
+  background: #242527;
+  border: none;
+  color: #c0c0c0;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  outline: none;
+}
+.fq {
+  display: block;
+  float: left;
+  padding-right: 10px;
+}
+.social {
+  float: left;
+  margin: 0;
+  padding: 15px 12px;
+  position: relative;
+}
+.social .social-item {
+  float: left;
+  list-style: none;
+}
+.social .social-item .dribbble,
+.social .social-item .facebook,
+.social .social-item .google,
+.social .social-item .rss,
+.social .social-item .twitter {
+  color: #818181;
+  padding: 8px;
+}
+.social .social-item .dribbble:hover,
+.social .social-item .facebook:hover,
+.social .social-item .google:hover,
+.social .social-item .rss:hover,
+.social .social-item .twitter:hover {
+  background: #325c94;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 8px;
+}
+.social:after {
+  background: url(../images/border-social.jpg);
+  clear: both;
+  content: "";
+  display: table;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+}
+.social:before {
+  background: url(../images/border-social.jpg);
+  clear: both;
+  content: "";
+  display: table;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+.lang {
+  background: #1d1e20;
+  border: none;
+  left: 10px;
+  top: 6px;
+}
+.lang:hover {
+  background: #27292e;
+}
+.main-header {
+  background: #fff;
+  padding: 35px 0;
+}
+.main-header .logo {
+  padding-top: 20px;
+}
+.main-header .logo .slogan {
+  color: #777777;
+  font-family: Roboto, sans-serif;
+}
+/* Navigation */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background: #e84a4a;
+  border-radius: 0;
+}
+nav {
+  border-bottom: 2px solid #e84a4a;
+}
+nav ul li a {
+  color: #dddddd;
+  font-family: Roboto, sans-serif;
+  font-size: 19px;
+}
+.nav-pills li a {
+  padding: 20px;
+}
+.nav-pills li a:hover {
+  background: #e84a4a;
+  color: #fff;
+  border-radius: 0;
+}
