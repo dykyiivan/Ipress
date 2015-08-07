@@ -7,6 +7,28 @@
 .btn-group {
   outline: none;
 }
+button:active,
+button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+a:active,
+a:focus {
+  outline: none;
+}
+input,
+textarea {
+  outline: none;
+}
+input:active,
+textarea:active {
+  outline: none;
+}
+:focus {
+  outline: none;
+}
 /* Header */
 header .top-header {
   background: #1d1e20;
@@ -47,6 +69,7 @@ header .top-header .date .btn-default {
   float: left;
   padding-right: 10px;
 }
+/* Social links */
 .social {
   float: left;
   margin: 0;
@@ -97,11 +120,19 @@ header .top-header .date .btn-default {
   top: 0;
   width: 2px;
 }
+/* Language icon */
 .lang {
-  background: #1d1e20;
   border: none;
-  left: 10px;
-  top: 6px;
+  display: inline-block;
+  left: 20px;
+  top: 12px;
+}
+.container-lang {
+  background-color: rgba(34, 34, 34, 0.8);
+  min-width: 65px;
+}
+.container-lang li a:hover {
+  background-color: rgba(40, 40, 40, 0.5);
 }
 .lang:hover {
   background: #27292e;
@@ -126,6 +157,7 @@ header .top-header .date .btn-default {
 }
 nav {
   border-bottom: 2px solid #e84a4a;
+  background: #1d1e20;
 }
 nav ul li a {
   color: #dddddd;
@@ -137,6 +169,61 @@ nav ul li a {
 }
 .nav-pills li a:hover {
   background: #e84a4a;
-  color: #fff;
   border-radius: 0;
+  color: #fff;
+}
+/* Dropdown menu */
+.main-menu-dropdown {
+  background: #1d1e20;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  min-width: 170px;
+  z-index: -1;
+}
+.main-menu-dropdown li {
+  list-style: none;
+}
+.main-menu-dropdown li a {
+  color: #dadada;
+  display: block;
+  font-size: 12px;
+  padding: 15px;
+}
+.main-menu-dropdown li a:hover {
+  text-decoration: none;
+}
+.dropdown:hover .main-menu-dropdown {
+  opacity: 1;
+  z-index: 1;
+}
+/* Search */
+.navbar-nav .navbar-right:hover,
+.navbar-nav .navbar-right:focus {
+  background: green;
+}
+.navbar-nav .search-btn {
+  padding: 6px 5px;
+}
+.navbar-nav .search-btn a {
+  background-color: #242527;
+  border-radius: 5px;
+  display: block;
+  padding: 14px;
+}
+.navbar-nav .search-btn .search-form {
+  background-color: #1D1E20;
+  width: 220px;
+  padding: 10px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: #e84a4a;
+  color: #fff;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background: transparent;
 }
