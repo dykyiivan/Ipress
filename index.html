@@ -9,53 +9,53 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet/less" type="text/css" href="less/styles.less" />
-	<link rel="stylesheet" href="less/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/dropdown.js" type="text/javascript"></script>
-	<script src="js/less.js" type="text/javascript"></script>
-	
 </head>
 <body>
 	<header>
 		<div class="top-header">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-md-6">
 						<div class="breaking-news">
 							<a href="#" class="fq"></a>
 							<p class="news-top-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d_</p>
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<div class="date">
-							<button type="button" class="btn btn-default">Tuesday, 10 December</button>
-						</div>
-						 <ul class="social">
-						 	<li class="social-item"><a href="#" class="dribbble">
-						 		<i class="fa fa-dribbble "></i>
-					 		</a></li>
-						 	<li class="social-item"><a href="#" class="google">
-						 		<i class="fa fa-google-plus "></i>
-						 	</a></li>
-						 	<li class="social-item"><a href="#" class="twitter">
-						 		<i class="fa fa-twitter "></i>
-						 	</a></li>
-						 	<li class="social-item"><a href="#" class="facebook">
-						 		<i class="fa fa-facebook "></i>
-						 	</a></li>
-						 	<li class="social-item"><a href="#" class="rss">
-						 		<i class="fa fa-rss "></i>
-						 	</a></li>
-						 </ul>
-				 		<div class="dropdown choose-country lang">
-							<a class="#" data-toggle="dropdown" href="#">
-								<img src="images/english-flag.png" alt="United States">
-							</a>
-							<ul class="dropdown-menu container-lang" role="menu">
-								<li role="menuitem"><a href="#">
-									<img src="images/ukraine-flag.png" alt="Ukraine"></a>
-								</li>
-							</ul>
+						<div class="col-md-6">
+							<div class="col-top-right">
+								<div class="date">
+									<button type="button" class="btn btn-default">Tuesday, 10 December</button>
+								</div>
+								 <ul class="social">
+								 	<li class="social-item"><a href="#" class="dribbble">
+								 		<i class="fa fa-dribbble "></i>
+							 		</a></li>
+								 	<li class="social-item"><a href="#" class="google">
+								 		<i class="fa fa-google-plus "></i>
+								 	</a></li>
+								 	<li class="social-item"><a href="#" class="twitter">
+								 		<i class="fa fa-twitter "></i>
+								 	</a></li>
+								 	<li class="social-item"><a href="#" class="facebook">
+								 		<i class="fa fa-facebook "></i>
+								 	</a></li>
+								 	<li class="social-item"><a href="#" class="rss">
+								 		<i class="fa fa-rss "></i>
+								 	</a></li>
+								 </ul>
+					 		<div class="dropdown choose-country lang">
+								<a class="#" data-toggle="dropdown" href="#">
+									<img src="images/english-flag.png" alt="United States">
+								</a>
+								<ul class="dropdown-menu container-lang" role="menu">
+									<li role="menuitem"><a href="#">
+										<img src="images/ukraine-flag.png" alt="Ukraine"></a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -80,48 +80,266 @@
 		</div>
 		<nav>
 			<div class="container">
-				<div class="col-md-9">
-					<ul class="nav nav-pills">
-						<li class="active"><a href="#">
-							<img src="images/home-icon.png" alt="Home page">
-						</a></li>
-						<li><a href="#">Business</a></li>
-						<li><a href="#">Travel</a></li>
-						<li class="dropdown">
-							<a href="#">People</a>
-							<ul class="main-menu-dropdown">
-								<li><a href="#">Example Link</a></li>
-								<li><a href="#">Example Link</a></li>
-								<li><a href="#">Example Link</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Sports</a></li>
-						<li><a href="#">Music</a></li>
-						<li><a href="#">Forum</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="nav navbar-right navbar-nav">
-						<li class="dropdown search-btn">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<i class="glyphicon glyphicon-search"></i>
-							</a>
-							<div class="dropdown-menu search-form">
-				                <form class="form-inline">
-				     				<input type="text" class="form-control pull-left" placeholder="Search">
-				                </form>
-			            	</div>
-						</li>
-						<li class="dropdown search-btn">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<i class="glyphicon glyphicon-random"></i>
-							</a>
-						</li>
-					</ul>
+			<div class="row">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<ul class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<li class="active"><a href="#">
+						<img src="images/home-icon.png" alt="Home page">
+					</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">Travel</a></li>
+					<li class="dropdown">
+						<a href="#">People</a>
+						<ul class="main-menu-dropdown">
+							<li><a href="#">Example Link</a></li>
+							<li><a href="#">Example Link</a></li>
+							<li><a href="#">Example Link</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Sports</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-right">
+					<li class="dropdown search-btn">
+						<a href="#" class="dropdown-toggle search-link" data-toggle="dropdown">
+							<i class="glyphicon glyphicon-search"></i>
+						</a>
+						<div class="dropdown-menu search-form">
+			                <form class="form-inline">
+			     				<input type="text" class="form-control pull-left" placeholder="Search">
+			                </form>
+		            	</div>
+					</li>
+					<li class="dropdown search-btn">
+						<a href="#" class="dropdown-toggle search-link" data-toggle="dropdown">
+							<i class="glyphicon glyphicon-random"></i>
+						</a>
+					</li>
+				</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="row social-share">
+						<div class="col-md-12">
+							<div class="social-share-item mg">
+								<a href="#" class="twitter-share"></a>
+								<div class="count">4570<br>
+									Followers
+								</div>
+							</div>
+							<div class="social-share-item">
+								<a href="#" class="facebook-share"></a>
+								<div class="count">245846<br>
+									Likes
+								</div>
+							</div>
+							<div class="social-share-item mg">
+								<a href="#" class="dribbble-share"></a>
+								<div class="count">1454<br>
+									Followers
+								</div>
+							</div>
+							<div class="social-share-item">
+								<a href="#" class="rss-share"></a>
+								<div class="count">4789<br>
+									Subcriber
+								</div>
+							</div>
+						</div>
+					    <div class="advertising-img-280">
+					    	<div class="row">
+					    		<div class="col-md-12">
+							    	<a href="#">
+							    		<img src="images/advertising-280.jpg" alt="Advertising">
+							    	</a>
+					    		</div>
+				    		</div>
+					    </div>
+					    <div class="col-md-6">
+						    <a href="#">
+						    	<img src="images/advertising-120.jpg" alt="Advertising">
+						    </a>
+				    	</div>
+					    <div class="col-md-6">
+					    	<a href="#">
+						    	<img src="images/advertising-120.jpg" alt="Advertising">
+						    </a>
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="jumbotron">
+						<div class="info-slider">
+							<div class="rating">
+								<img src="images/rating-icon.png" alt="Rating">
+								<p>8.95</p>
+							</div>
+							<div class="cat">
+								<p>Entertinmant</p>
+							</div>
+						</div>
+					  <div class="tab-wrapper">
+					  	<a class="tab tab-active">
+					  		<h2>Sed ut perspiciatis unde omnis...</h2>
+					  		<p>Lorem ipsum dolor sit amet, lorem consectetuer elit</p>
+					  	</a>
+					  	<a class="tab">
+					  		<h2>Proin eu sapien non tortor mattis...</h2>
+					  		<p>Lorem ipsum dolor sit amet, lorem consectetuer elit</p>
+					  	</a>
+					  	<a class="tab">
+					  		<h2>Pellentesque ac est risus...</h2>
+					  		<p>Lorem ipsum dolor sit amet, lorem consectetuer elit</p>
+					  	</a>
+					  	<a class="tab">
+					  		<h2>Sed ut perspiciatis unde omnis...</h2>
+					  		<p>Lorem ipsum dolor sit amet, lorem consectetuer elit</p>
+					  	</a>
+					  </div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+								<h3 class="video-widget-title">Video Widget
+									<img src="images/arrow-video-widget.png" alt="Video Widget" class="arrow-video-widget">
+								</h3>
+							<div class="html5-video-container">
+								<div class="embed-responsive embed-responsive-16by9">
+						    		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RX_Mzfj4N5k"></iframe>
+								</div>
+							</div>
+							<div class="row">
+							<div class="col-md-12">
+							<div class="datepicker-container">
+								<div class="datepicker-header">
+						    		<a href="#" class="ui-datepicker-prev">
+						    			<!-- <img src="images/prew-arrow.png" alt="Prew"> -->
+						    		</a>
+						    		<a href="#" class="ui-datepicker-next">
+						    			<!-- <img src="images/next-arrow.png" alt="Next"> -->
+						    		</a>
+						    		<div class="ui-datepicker-title">
+						    			<span class="ui-datepicker-month">
+						    				November 
+						    			</span>
+						    		</div>
+								</div>
+								<table class="ui-datepicker-calendar">
+									<tbody>
+										<tr>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+										</tr>
+										<tr>
+											<td>4</td> 		
+											<td>5</td>
+											<td>6</td>
+											<td>7</td>
+											<td>8</td>
+											<td>9</td>
+											<td>10</td>
+										</tr>
+										<tr>
+											<td>11</td> 		
+											<td>12</td>
+											<td>13</td>
+											<td>14</td>
+											<td>15</td>
+											<td>16</td>
+											<td>17</td>
+										</tr>
+										<tr>
+											<td>18</td> 	
+											<td>19</td>
+											<td>20</td>
+											<td>21</td>									
+											<td>22</td>
+											<td>23</td>
+											<td>24</td>
+										</tr>
+										<tr>
+											<td>25</td> 		
+											<td>26</td>
+											<td>27</td>
+											<td>28</td>
+											<td>29</td>
+											<td>30</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-8">
+							<section class="post-of-the-day-section">
+								<h3 class="post-of-the-day-title">Post of the day
+									<img src="images/arrow-post-of-day.png" alt="Post of the day" class="arrow-video-widget">
+								</h3>
+								<article class="post-of-the-day">
+									<a href="#" class="img-post-of-the-day"></a>
+									<a class="cat-article">Society</a>
+									<div class="page-header">
+										<h2>Here's What Instagram Ads Will Look Like</h2>
+										<time>3 hours ago</time> / <span class="comments">0 comments</span>
+									</div>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry unknown printer took a galley of type and scrambled it to make a type has survived not only fiv..</p>
+								</article>
+							</section>
+							<section class="lifestyle">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="title-blue">
+											<h2 class="lifestyle-title">Lifestyle</h2>
+											<ol class="carousel-indicators lifestyle-indicators">
+											    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+											    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+											  </ol>
+											<a href="#" class="rss-icon">
+												<i class="fa fa-rss"></i>
+											</a>
+											<div class="row">
+												<div class="col-md-6">
+													<article class="lifestyle-post">
+														<a href="#" class="img-lifestyle-post"></a>
+													<div class="page-header lifestyle-title">
+														<h2>Here's What Instagram </h2>
+														<time>1 minutes ago </time> / <span class="comments">2 comments</span>
+													</div>
+													<p>Lorem Ipsum is simply dummy text of the printing men book. It has survived not only five centuries... </p>
+												</article>
+												</div>
+
+												<div class="col-md-6">
+													
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
