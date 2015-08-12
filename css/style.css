@@ -18,6 +18,11 @@ a:active,
 a:focus {
   outline: none;
 }
+a:hover {
+  cursor: pointer;
+  color: #e84a4a;
+  text-decoration: none;
+}
 input,
 textarea {
   outline: none;
@@ -31,7 +36,9 @@ textarea:active {
 }
 /* Clearfix */
 .col-top-right:after,
-.post-of-the-day:after {
+.post-of-the-day:after,
+.advertising-img-small-wrap:after,
+ul.posts li:after {
   clear: both;
   display: table;
   content: "";
@@ -300,6 +307,92 @@ nav ul li a {
 .mg {
   margin-right: 40px;
 }
+/* Advertising */
+.advertising-img-big {
+  padding: 0 0 20px 15px;
+}
+.advertising-img-small-wrap {
+  padding: 0 15px;
+}
+.advertising-img-small-left {
+  float: left;
+}
+.advertising-img-small-right {
+  float: right;
+}
+/* Widget Whats hot */
+.hot-news {
+  padding-bottom: 20px;
+}
+.title-link {
+  color: #585858;
+  font-size: 15px;
+  display: block;
+  padding-bottom: 10px;
+}
+.title-link:hover {
+  color: #e84a4a;
+  text-decoration: none;
+}
+.whats-hot-widget h3 {
+  background: #1d1e20;
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 0 6px 15px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.whats-hot-indicators {
+  position: absolute;
+  bottom: -4px;
+  left: 100%;
+  width: 75px;
+}
+.whats-hot-indicators li:hover {
+  background: #fff;
+}
+.whats-hot-img {
+  background: #787878;
+  display: block;
+  height: 70px;
+  position: relative;
+  width: 70px;
+}
+.whats-hot-img:hover {
+  background: #222222 url(../images/inner-arrow.png) no-repeat center;
+  opacity: 0.8;
+}
+.whats-hot-img span {
+  background-color: #e84a4a;
+  bottom: -2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  height: 20px;
+  left: -2px;
+  padding: 3px 1px 0 0;
+  position: absolute;
+  text-align: center;
+  width: 20px;
+}
+.comments-time {
+  color: #a3abaf;
+  font-size: 14px;
+  float: left;
+  padding-right: 15px;
+}
+.widget-rating {
+  float: left;
+}
+.widget-rating:hover {
+  background: #000;
+}
+.widget-rating p {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 0 9px 0 0px!important;
+}
 /* Slider */
 .container .jumbotron {
   border-radius: 0;
@@ -387,13 +480,16 @@ nav ul li a {
 .rating p {
   padding: 2px 0 2px 20px;
 }
+.no-rating {
+  display: none;
+}
 .cat {
   background: #4a7ee8;
   padding: 9px;
 }
 /* Video Widget */
 .video-widget-title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   background: #1d1e20;
   color: #fff;
   font-size: 18px;
@@ -404,6 +500,9 @@ nav ul li a {
   position: absolute;
   top: 31px;
   left: 20px;
+}
+.html5-video-container {
+  border: 1px solid #f3f4f4;
 }
 /* Section Post of the day */
 .img-post-of-the-day {
@@ -419,14 +518,13 @@ nav ul li a {
   border: none;
 }
 .post-of-the-day-title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   background: #1d1e20;
   color: #fff;
   font-size: 18px;
   padding: 6px 0 6px 15px;
   position: relative;
   background: #f55a5a;
-  postion: relative;
 }
 .cat-article {
   background: #1d1e20;
@@ -458,7 +556,7 @@ time,
 }
 .datepicker-header {
   position: relative;
-  padding-bottom: 7px;
+  padding-bottom: 3px;
 }
 .ui-datepicker-calendar td {
   background: #EEEEEE;
@@ -494,15 +592,24 @@ time,
   width: 6px;
   z-index: 1;
 }
+td.today {
+  background: #e84a4a;
+  color: #fff;
+}
 /* Lifestyle section */
 .lifestyle {
   position: relative;
 }
+.lifestyle .arrow-lifestyle {
+  position: absolute;
+  top: 31px;
+  left: 20px;
+}
 .title-blue {
   margin: 0;
 }
-.title-blue h2 {
-  margin-bottom: 40px;
+.title-blue h3 {
+  margin-bottom: 30px;
   background: #1d1e20;
   color: #fff;
   font-size: 18px;
@@ -552,4 +659,47 @@ time,
   font-size: 24px;
   padding: 0 0 18px 0;
   margin: 0;
+}
+ul.posts {
+  padding: 0 0 0 15px;
+}
+ul.posts li {
+  list-style: none;
+  border-bottom: 1px dashed #ECECEC;
+  padding: 15px 0;
+}
+ul.posts li:last-child {
+  border: none;
+}
+ul.posts li:first-child {
+  padding: 0 0 15px 0;
+}
+ul.posts li h2 {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+ul.posts li a {
+  color: #475055;
+}
+ul.posts li a:hover {
+  color: #e84a4a;
+}
+a.posts-img {
+  display: block;
+  height: 70px;
+  width: 70px;
+  background-color: #ccc;
+  float: left;
+  margin-right: 20px;
+}
+.meta {
+  font-size: 10px;
+  color: #a3abaf;
+}
+.meta-comments {
+  font-size: 10px;
+  color: #a3abaf;
+}
+.meta-comments:hover {
+  color: #e84a4a;
 }
