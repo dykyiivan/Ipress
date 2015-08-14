@@ -80,50 +80,48 @@
 		</div>
 		<nav>
 			<div class="container">
-				<div class="row">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<ul class="nav navbar-nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<li class="active"><a href="#">
-							<img src="images/home-icon.png" alt="Home page">
-						</a></li>
-						<li><a href="#">Business</a></li>
-						<li><a href="#">Travel</a></li>
-						<li class="dropdown">
-							<a href="#">People</a>
-							<ul class="main-menu-dropdown">
-								<li><a href="#">Example Link</a></li>
-								<li><a href="#">Example Link</a></li>
-								<li><a href="#">Example Link</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Sports</a></li>
-						<li><a href="#">Music</a></li>
-						<li><a href="#">Forum</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-					<ul class="nav navbar-right">
-						<li class="dropdown search-btn">
-							<a href="#" class="dropdown-toggle search-link" data-toggle="dropdown">
-								<i class="glyphicon glyphicon-search"></i>
-							</a>
-							<div class="dropdown-menu search-form">
-				                <form class="form-inline">
-				     				<input type="text" class="form-control pull-left" placeholder="Search">
-				                </form>
-			            	</div>
-						</li>
-						<li class="dropdown search-btn">
-							<a href="#" class="dropdown-toggle search-link" data-toggle="dropdown">
-								<i class="glyphicon glyphicon-random"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<ul class="nav navbar-nav collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
+					<li class="active"><a href="#">
+						<img src="images/home-icon.png" alt="Home page">
+					</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">Travel</a></li>
+					<li class="dropdown">
+						<a href="#">People</a>
+						<ul class="main-menu-dropdown">
+							<li><a href="#">Example Link</a></li>
+							<li><a href="#">Example Link</a></li>
+							<li><a href="#">Example Link</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Sports</a></li>
+					<li><a href="#">Music</a></li>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-right">
+					<li class="dropdown search-btn">
+						<a href="#" class="dropdown-toggle search-link" data-toggle="dropdown">
+							<i class="glyphicon glyphicon-search"></i>
+						</a>
+						<div class="dropdown-menu search-form">
+			                <form class="form-inline">
+			     				<input type="text" class="form-control pull-left" placeholder="Search">
+			                </form>
+		            	</div>
+					</li>
+					<li class="dropdown search-btn">
+						<a href="#" class="dropdown-toggle search-link" data-toggle="dropdown">
+							<i class="glyphicon glyphicon-random"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</header>
@@ -133,30 +131,46 @@
 				<div class="col-md-3">
 					<div class="row social-share">
 						<div class="col-md-12">
-							<div class="social-share-item mg">
-								<a href="#" class="twitter-share"></a>
-								<div class="count">4570<br>
-									Followers
-								</div>
-							</div>
-							<div class="social-share-item">
-								<a href="#" class="facebook-share"></a>
-								<div class="count">245846<br>
-									Likes
-								</div>
-							</div>
-							<div class="social-share-item mg">
-								<a href="#" class="dribbble-share"></a>
-								<div class="count">1454<br>
-									Followers
-								</div>
-							</div>
-							<div class="social-share-item">
-								<a href="#" class="rss-share"></a>
-								<div class="count">4789<br>
-									Subcriber
-								</div>
-							</div>
+							<ul class="social-share">
+								<li class="twitter-share">
+									<a href="#">
+										<i class="fa fa-twitter share"></i>
+									</a>
+									<div class="count">
+										<span>4570<br>
+										Followers</span>
+									</div>
+								</li>
+								<li class="facebook-share">
+									<a href="#">
+										<i class="fa fa-facebook share"></i>
+									</a>
+									<div class="count">
+										<span>245846<br>
+										Likes</span>
+									</div>
+								</li>
+								<li class="dribbble-share">
+									<a href="#">
+										<i class="fa fa-dribbble share"></i>
+									</a>
+									<div class="count">
+										<span>1454<br>
+											Followers
+										</span>
+									</div>
+								</li>
+								<li class="rss-share">
+									<a href="#">
+										<i class="fa fa-rss share"></i>
+									</a>
+									<div class="count">
+										<span>4789<br>
+											Subcriber
+										</span>
+									</div>
+								</li>
+							</ul>
 						</div>
 					    <div class="advertising-img-big">
 					    	<a href="#">
@@ -175,15 +189,17 @@
 							    </a>
 						    </div>
 					    </div>
-					    <div class="whats-hot-widget col-md-12">
-					    	<h3>What’s Hot
-								<img src="images/arrow-video-widget.png" alt="Video Widget" class="arrow-video-widget">
-								<ol class="carousel-indicators whats-hot-indicators">
+					    <div class="widget">
+					    	<div class="widget-title-block">
+						    	<h1 class="widget-title">What’s Hot
+									
+						    	</h1>
+						    	<ol class="carousel-indicators whats-hot-indicators">
 								    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 								    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 								    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 							  	</ol>
-					    	</h3>
+						  	</div>
 					    	<div class="hot-news">
 						    	<div class="row">
 						    		<div class="col-md-4">
@@ -297,7 +313,7 @@
 					  	<a class="tab tab-active">
 					  		<h2>Sed ut perspiciatis unde omnis...</h2>
 					  		<p>Lorem ipsum dolor sit amet, lorem consectetuer elit</p>
-					  	</a>
+					  	</a> 
 					  	<a class="tab">
 					  		<h2>Proin eu sapien non tortor mattis...</h2>
 					  		<p>Lorem ipsum dolor sit amet, lorem consectetuer elit</p>
@@ -314,16 +330,14 @@
 					</div>
 					<div class="row">
 						<div class="col-md-4">
-								<h3 class="video-widget-title">Video Widget
-									<img src="images/arrow-video-widget.png" alt="Video Widget" class="arrow-video-widget">
-								</h3>
+								<h1 class="widget-title">Video Widget</h1>
 							<div class="html5-video-container">
 								<div class="embed-responsive embed-responsive-16by9">
 						    		<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RX_Mzfj4N5k"></iframe>
 								</div>
 							</div>
 							<div class="row">
-							<div class="col-md-12">
+							<div class="widget">
 								<div class="datepicker-container">
 									<div class="datepicker-header">
 							    		<a href="#" class="ui-datepicker-prev">
@@ -389,10 +403,8 @@
 								</table>
 							</div>
 						</div>
-						<div class="col-md-12">
-								<h3 class="video-widget-title">Random Posts
-									<img src="images/arrow-video-widget.png" alt="Video Widget" class="arrow-video-widget">
-								</h3>
+						<div class="widget">
+								<h1 class="widget-title">Random Posts</h1>
 								<div class="random-posts">
 									<a href="#" class="random-posts-img"></a>
 									<div class="random-post-content">
@@ -434,15 +446,13 @@
 						</div>
 						<div class="col-md-8">
 							<section class="post-of-the-day-section">
-								<h3 class="post-of-the-day-title">Post of the day
-									<img src="images/arrow-post-of-day.png" alt="Post of the day" class="arrow-video-widget">
-								</h3>
+								<h1 class="widget-title red">Post of the day</h1>
 								<article class="post-of-the-day">
 									<a href="#" class="img-post-of-the-day"></a>
 									<a class="inner-article">Society</a>
 									<div class="page-header">
 										<h2>Here's What Instagram Ads Will Look Like</h2>
-										<time>3 hours ago</time> / <span class="comments">0 comments</span>
+										<span class="time">3 hours ago</span> / <a class="comments">0 comments</a>
 									</div>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry unknown printer took a galley of type and scrambled it to make a type has survived not only fiv..</p>
 								</article>
@@ -451,9 +461,7 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="title-blue">
-											<h3 class="lifestyle-title">Lifestyle
-												<img src="images/arrow-lifestyle.png" alt="Lifestyle" class="arrow-lifestyle">
-											</h3>
+											<h1 class="widget-title blue">Lifestyle</h1>
 											<ol class="carousel-indicators lifestyle-indicators">
 											    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 											    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -468,7 +476,7 @@
 														<a href="#" class="img-lifestyle-post"></a>
 													<div class="page-header lifestyle-title">
 														<h2>Here's What Instagram </h2>
-														<time>1 minutes ago </time> / <a class="comments">2 comments</a>
+														<span class="time">1 minutes ago </span> / <a class="comments">2 comments</a>
 													</div>
 													<p>Lorem Ipsum is simply dummy text of the printing men book. It has survived not only five centuries... </p>
 												</article>
@@ -520,9 +528,7 @@
 								</div>
 							<div class="col-md-8">
 								<section class="carousel-posts">
-									<h3 class="carousel-posts-title">Carousel Posts
-										<img src="images/arrow-carousel-posts.png" alt="Lifestyle" class="arrow-lifestyle">
-									</h3>
+									<h1 class="widget-title light-dark">Carousel Posts</h1>
 									<ol class="carousel-indicators lifestyle-indicators">
 									    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 									    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
