@@ -6754,6 +6754,24 @@ textarea:active {
 :focus {
   outline: none;
 }
+body {
+  font-family: "Roboto", Helvetica, Tahoma, Arial;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Roboto;
+  font-weight: 500;
+}
 .color-technology {
   background-color: #46d3ce;
 }
@@ -6770,7 +6788,9 @@ textarea:active {
 .col-top-right:after,
 .post-of-the-day:after,
 .advertising-img-small-wrap:after,
-ul.posts li:after {
+ul.posts li:after,
+.meta:after,
+.footer-bottom:after {
   clear: both;
   display: table;
   content: "";
@@ -6794,7 +6814,7 @@ header .top-header .breaking-news .fq {
 }
 header .top-header .breaking-news .news-top-header {
   color: #ffffff;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", Helvetica, Tahoma, Arial;
   font-size: 12px;
   padding: 2px 0 5px 30px;
   margin: 0;
@@ -6807,7 +6827,7 @@ header .top-header .date .btn-default {
   background: #242527;
   border: none;
   color: #c0c0c0;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", Helvetica, Tahoma, Arial;
   font-size: 12px;
   outline: none;
 }
@@ -6905,7 +6925,7 @@ header .top-header .date .btn-default {
 }
 .main-header .logo .slogan {
   color: #777777;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", Helvetica, Tahoma, Arial;
 }
 /* Navigation */
 .navbar-nav > li.active > a,
@@ -6921,7 +6941,7 @@ nav {
 }
 nav ul li a {
   color: #dddddd;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", Helvetica, Tahoma, Arial;
   font-size: 19px;
 }
 .navbar-nav li a {
@@ -7163,8 +7183,9 @@ ol.carousel-indicators.whats-hot-indicators li:hover {
 .widget-rating p {
   color: #fff;
   display: inline-block;
+  font-size: 12px;
   margin: 0;
-  padding: 0 9px 0 0px!important;
+  padding: 3px 9px 0 0px!important;
 }
 /* Slider */
 .container .jumbotron {
@@ -7249,8 +7270,10 @@ ol.carousel-indicators.whats-hot-indicators li:hover {
   padding: 5px;
   float: left;
 }
-.rating p {
-  padding: 2px 0 2px 20px;
+.rating a {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 3px 8px 3px 2px!important;
 }
 .no-rating {
   display: none;
@@ -7258,6 +7281,12 @@ ol.carousel-indicators.whats-hot-indicators li:hover {
 .inner {
   background: #4a7ee8;
   padding: 9px;
+}
+.inner a {
+  color: #ffffff;
+}
+.inner a:hover {
+  color: #f55a5a;
 }
 /* Video Widget */
 .widget-title {
@@ -7272,7 +7301,8 @@ ol.carousel-indicators.whats-hot-indicators li:hover {
 .light-dark:after,
 .dark:after,
 .light-green:after,
-.dark-blue:after {
+.dark-blue:after,
+.footer-title:after {
   clear: both;
   color: #1D1E20;
   content: "\25bc";
@@ -7280,7 +7310,7 @@ ol.carousel-indicators.whats-hot-indicators li:hover {
   font-size: 20px;
   left: 19px;
   position: absolute;
-  top: 74%;
+  top: 70%;
   transform: rotateX(60deg);
 }
 .arrow-video-widget {
@@ -7780,4 +7810,186 @@ label {
 }
 .comment {
   margin: 0;
+}
+/* Footer main*/
+footer {
+  background-color: #1d1e20;
+  border-top: 2px solid #e84a4a;
+}
+.footer-main {
+  padding-bottom: 40px;
+}
+.footer-logo-wrapper {
+  padding: 40px 0 25px 0;
+}
+.footer-logo {
+  background: url(../images/footer-logo.png) no-repeat center;
+  display: block;
+  float: left;
+  height: 56px;
+  width: 50px;
+}
+p.logo {
+  color: #fff;
+  font-size: 42px;
+  line-height: 1;
+  margin: 0;
+  padding-left: 65px;
+}
+p.footer-slogan {
+  color: #939393;
+  padding-left: 65px;
+}
+.footer-title {
+  background: #252729;
+  margin: 40px 0 30px 0;
+}
+.footer-title:after {
+  color: #252729;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+}
+.footer-list li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+.footer-list li h2 {
+  font-size: 14px;
+  margin: 20px 0 5px 0;
+}
+.footer-list li h2 a {
+  color: #ffffff;
+  line-height: 1.5;
+}
+.footer-list li h2 a:hover {
+  color: #f55a5a;
+}
+.footer-list span {
+  color: #616568;
+}
+.footer-posts-img,
+.footer-reviews-img {
+  display: block;
+  height: 70px;
+  width: 70px;
+  background-color: #ccc;
+  float: left;
+  margin-right: 20px;
+  background-color: #787878;
+}
+.about {
+  color: #bbb;
+}
+.about a {
+  color: #f7f7f7;
+}
+.about a:hover {
+  color: #f55a5a;
+}
+/* Footer reviews */
+.footer-rating {
+  background-color: #e84a4a;
+}
+.footer-reviews {
+  float: left;
+  padding: 4px 0 0 4px;
+}
+.footer-reviews a {
+  padding: 5px 5px 3px 5px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.color-entertainment {
+  background-color: #4688d3;
+  color: #ffffff;
+}
+.color-people {
+  background-color: #46d367;
+  color: #ffffff;
+}
+/* Newsletters */
+.newsletters {
+  color: #bbb;
+  font-size: 14px;
+}
+.newsletters-form {
+  padding-top: 30px;
+}
+input[type=email] {
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px 10px 20px;
+}
+input[type=email]::-webkit-input-placeholder {
+  color: #585858;
+}
+input[type=email]::-moz-placeholder {
+  color: #585858;
+}
+/* Firefox 19+ */
+input[type=email]:-moz-placeholder {
+  color: #585858;
+}
+/* Firefox 18- */
+input[type=email]:-ms-input-placeholder {
+  color: #585858;
+}
+.submit {
+  background-color: #e84a4a;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  margin-left: 10px;
+  padding: 9px 11px;
+}
+.social-footer {
+  float: left;
+  margin: 0;
+  padding: 15px 12px;
+  position: relative;
+}
+.social-footer .social-item {
+  float: left;
+  list-style: none;
+}
+.social-footer .social-item .dribbble,
+.social-footer .social-item .facebook,
+.social-footer .social-item .google,
+.social-footer .social-item .rss,
+.social-footer .social-item .twitter {
+  color: #818181;
+  padding: 8px;
+}
+.social-footer .social-item .dribbble:hover,
+.social-footer .social-item .facebook:hover,
+.social-footer .social-item .google:hover,
+.social-footer .social-item .rss:hover,
+.social-footer .social-item .twitter:hover {
+  background: #325c94;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 8px;
+}
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid #2B2B2B;
+  padding: 20px 0 30px 0;
+}
+p.copyring {
+  color: #797979;
+  float: left;
+  font-size: 12px;
+}
+.back-to-top {
+  float: right;
+}
+.back-to-top a {
+  color: #797979;
+  font-size: 12px;
+}
+.back-to-top a img {
+  padding-left: 10px;
 }
