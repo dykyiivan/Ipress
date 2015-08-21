@@ -16,46 +16,40 @@
 	<header>
 		<div class="top-header">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="breaking-news" id="to-top">
-							<a href="#" class="fq"></a>
-							<p class="news-top-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d_</p>
+				<div class="breaking-news" id="to-top">
+					<a href="#" class="fq"></a>
+					<p class="news-top-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d_</p>
+				</div>
+					<div class="col-top-right">
+						<div class="date">
+							<button type="button" class="btn btn-default">Tuesday, 10 December</button>
 						</div>
-					</div>
-						<div class="col-md-6">
-							<div class="col-top-right">
-								<div class="date">
-									<button type="button" class="btn btn-default">Tuesday, 10 December</button>
-								</div>
-								 <ul class="social">
-								 	<li class="social-item"><a href="#" class="dribbble">
-								 		<i class="fa fa-dribbble "></i>
-							 		</a></li>
-								 	<li class="social-item"><a href="#" class="google">
-								 		<i class="fa fa-google-plus "></i>
-								 	</a></li>
-								 	<li class="social-item"><a href="#" class="twitter">
-								 		<i class="fa fa-twitter "></i>
-								 	</a></li>
-								 	<li class="social-item"><a href="#" class="facebook">
-								 		<i class="fa fa-facebook "></i>
-								 	</a></li>
-								 	<li class="social-item"><a href="#" class="rss">
-								 		<i class="fa fa-rss "></i>
-								 	</a></li>
-								 </ul>
-					 		<div class="dropdown choose-country lang">
-								<a class="#" data-toggle="dropdown" href="#">
-									<img src="images/english-flag.png" alt="United States">
-								</a>
-								<ul class="dropdown-menu container-lang" role="menu">
-									<li role="menuitem"><a href="#">
-										<img src="images/ukraine-flag.png" alt="Ukraine"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
+						 <ul class="social">
+						 	<li class="social-item"><a href="#" class="dribbble">
+						 		<i class="fa fa-dribbble "></i>
+					 		</a></li>
+						 	<li class="social-item"><a href="#" class="google">
+						 		<i class="fa fa-google-plus "></i>
+						 	</a></li>
+						 	<li class="social-item"><a href="#" class="twitter">
+						 		<i class="fa fa-twitter "></i>
+						 	</a></li>
+						 	<li class="social-item"><a href="#" class="facebook">
+						 		<i class="fa fa-facebook "></i>
+						 	</a></li>
+						 	<li class="social-item"><a href="#" class="rss">
+						 		<i class="fa fa-rss "></i>
+						 	</a></li>
+						 </ul>
+			 		<div class="dropdown choose-country lang">
+						<a class="#" data-toggle="dropdown" href="#">
+							<img src="images/english-flag.png" alt="United States">
+						</a>
+						<ul class="dropdown-menu container-lang" role="menu">
+							<li role="menuitem"><a href="#">
+								<img src="images/ukraine-flag.png" alt="Ukraine"></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -77,14 +71,17 @@
 				</div>
 			</div>
 		</div>
-	<nav>
+	<nav class="navbar navbar-default">
 		<div class="container">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
+			<div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+	     <div class="navbar-collapse collapse main-menu" id="bs-example-navbar-collapse-1" aria-expanded="false">
 			<ul class="nav navbar-nav collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
 				<li class="active"><a href="#">
 					<img src="images/home-icon.png" alt="Home page">
@@ -110,9 +107,12 @@
 						<i class="glyphicon glyphicon-search"></i>
 					</a>
 					<div class="dropdown-menu search-form">
-		                <form class="form-inline">
-		     				<input type="text" class="form-control pull-left" placeholder="Search">
-		                </form>
+		                <form class="navbar-form navbar-left" role="search">
+					        <div class="form-group">
+					          <input type="text" class="form-control" placeholder="Search">
+					        </div>
+				        	<button type="submit" class="btn btn-default search-form-btn"><i class="fa fa-search"></i></button>
+				      </form>
 	            	</div>
 				</li>
 				<li class="dropdown search-btn">
@@ -609,8 +609,8 @@
 								<article class="post-of-the-day">
 									<a href="#" class="img-post-of-the-day"></a>
 									<a class="inner-article">Society</a>
-									<div class="page-header">
-										<h2>Here's What Instagram Ads Will Look Like</h2>
+									<div class="page-header title-post">
+										<h2><a href="#">Here's What Instagram Ads Will Look Like</a></h2>
 										<span class="time">3 hours ago</span> / <a class="comments">0 comments</a>
 									</div>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry unknown printer took a galley of type and scrambled it to make a type has survived not only fiv..</p>
@@ -634,7 +634,7 @@
 													<article class="lifestyle-post">
 														<a href="#" class="img-lifestyle-post"></a>
 													<div class="page-header title-post">
-														<h2>Here's What Instagram </h2>
+														<h2><a href="#">Here's What Instagram</a></h2>
 														<span class="time">1 minutes ago </span> / <a class="comments">2 comments</a>
 													</div>
 													<p>Lorem Ipsum is simply dummy text of the printing men book. It has survived not only five centuries... </p>
@@ -748,7 +748,7 @@
 														<article class="music-post">
 															<a href="#" class="img-music-post"></a>
 														<div class="page-header title-post">
-															<h2>Here's What Instagram </h2>
+															<h2><a href="#">Here's What Instagram</a></h2>
 															<span class="time">1 minutes ago </span> / <a class="comments">2 comments</a>
 														</div>
 														<p>Lorem Ipsum is simply dummy text of the printing men book. It has survived not only five centuries... </p>
@@ -818,7 +818,7 @@
 													<article class="world-news-post">
 														<a href="#" class="img-world-news-post"></a>
 													<div class="page-header title-post">
-														<h2>Here's What Instagram </h2>
+														<h2><a href="#">Here's What Instagram</a></h2>
 														<span class="time">1 minutes ago </span> / <a class="comments">2 comments</a>
 													</div>
 													<p>Lorem Ipsum is simply dummy text of the printing men book. It has survived not only five centuries... </p>
