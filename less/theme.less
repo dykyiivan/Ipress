@@ -364,14 +364,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-right: 7px;
     &:after {
 	    clear: both;
-	    color: #00ABDC;
-	    content: "\25b6";
+	    content: "";
 	    display: table;
-	    font-size: 20px;
 	    right: -10px;
 	    position: absolute;
-	    top: 14px;
-	    transform: rotateY(60deg);
+	    top: 17px;
+	    border-left: 12px solid #00ABDC;
+	    border-top: 9px solid transparent;
+	    border-bottom: 9px solid transparent;
     }
 }
 .twitter-share .share {
@@ -381,19 +381,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background: #325c94;
     padding: 15px 20px;
     &:after {
-    	color: #325c94;
+    	border-left: 12px solid #325c94;
     }
 }
 .dribbble-share .share {
 	background: #fa4086;
 	&:after {
-		color: #fa4086;
+		border-left: 12px solid #fa4086;
 	}
 }
 .rss-share .share {
 	background: #fd9f13;
 	&:after {
-		color: #fd9f13;
+		border-left: 12px solid #fd9f13;
 	}
 }
 .social-share {
@@ -413,6 +413,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* Advertising */
 .advertising-img-big {
 	padding:0 0 20px 15px;
+}
+.advertising-img-280 {
+    max-width: 100%;
 }
 .advertising-img-small-wrap {
     padding: 0 15px;
@@ -561,15 +564,17 @@ ol.carousel-indicators.whats-hot-indicators {
 	position: relative;
 }
 .tab-active:before {
+    border-bottom: 9px solid transparent;
+    border-right: 10px solid #1d1e20;
+    border-top: 9px solid transparent;
     clear: both;
-    color: #252527;
-    content: "\25C0";
-    display: block;
-    font-size: 25px;
-    left: -13px;
+    content: "";
+    display: table;
+    height: 0px;
+    left: -10px;
     position: absolute;
-    top: 33px;
-    transform: rotateY(50deg);
+    top: 45px;
+    width: 0px;
 }
 .tab-active h2{
 	color: #e84a4a;
@@ -626,15 +631,17 @@ ol.carousel-indicators.whats-hot-indicators {
 .light-green:after,
 .dark-blue:after,
 .footer-title:after {
-		clear: both;
-		color: #1D1E20;
-		content: "\25bc";
-		display: table;
-		font-size: 20px;
-		left: 19px;
-		position: absolute;
-		top: 70%;
-		transform: rotateX(60deg);
+	clear: both;
+	content: "";
+	display: table;
+	font-size: 20px;
+	left: 19px;
+	position: absolute;
+	transform: rotateX(60deg);
+	border-top: 14px solid #1d1e20;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	margin-top: 2px;
 }
 .arrow-video-widget {
 		position: absolute;
@@ -661,7 +668,7 @@ ol.carousel-indicators.whats-hot-indicators {
 .red {
 	background: @red;
 	&:after {
-		color: @red;
+		border-top: 14px solid @red;
 	}
 }
 .inner-article {
@@ -673,15 +680,18 @@ ol.carousel-indicators.whats-hot-indicators {
     position: absolute;
     top: 98px;
     &:after {
+    	
 	    clear: both;
-	    color: @dark;
-	    content: "\25b6";
-	    display: table;
-	    font-size: 20px;
-	    right: -10px;
+	    border-bottom: 7px solid transparent;
+	    border-left: 10px solid @dark;
+	    border-top: 7px solid transparent;
+	    content: "";
+	    display: block;
+	    height: 0;
 	    position: absolute;
-	    top: 0;
-	    transform: rotateY(60deg);
+	    right: -8px;
+	    top: 8px;
+	    width: 0;
     }
 }
 p {
@@ -788,7 +798,7 @@ td.today {
 .blue {
 	background: @blue;
 	&:after {
-		color: @blue;
+		border-top: 14px solid @blue;
 	}
 }
 .lifestyle-indicators {
@@ -892,7 +902,7 @@ a.posts-img {
 .light-dark {
 	background: #484848;
 	&:after {
-		color: @light-dark;
+		border-top: 14px solid @light-dark;
 	}
 }
 .col-md-4.carousel-post:hover .carousel-posts-image-hover {
@@ -938,7 +948,7 @@ a.posts-img {
 .light-green {
 	background-color: @light-green;
 	&:after {
-		color: @light-green;
+		border-top: 14px solid @light-green;
 	}
 }
 /* World News */
@@ -954,7 +964,7 @@ a.posts-img {
 .dark-blue {
 	background-color: @dark-blue;
 	&:after {
-		color: @dark-blue;
+		border-top: 14px solid @dark-blue;
 	}
 }
 /* Posts Tags */
@@ -1169,7 +1179,9 @@ p.footer-slogan {
 	background: @footer-title;
     margin: 40px 0 30px 0;
 	&:after {
-		color: @footer-title;
+	    border-top: 14px solid #252729;
+	    border-right: 7px solid transparent;
+	    border-left: 7px solid transparent;
 	}
 }
 .footer-list {
@@ -1264,7 +1276,7 @@ input[type=email]:-ms-input-placeholder {
     border-radius: 4px;
     border: none;
     color: #fff;
-    margin-left: 10px;
+    margin-left: 2px;
     padding: 9px 11px;
 }
 .social-footer {
