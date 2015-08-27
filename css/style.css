@@ -7145,6 +7145,12 @@ h6,
 .advertising-img-small-right {
   float: right;
 }
+@media (max-width: 1200px) {
+  .advertising-img-small-right {
+    float: left;
+    padding-top: 15px;
+  }
+}
 /* Widget Whats hot */
 .widget {
   padding: 0 15px;
@@ -7422,9 +7428,10 @@ p {
 }
 /* Calendar */
 .datepicker-container {
-  width: 259px;
-  padding-top: 30px;
   margin: auto;
+  max-width: 100%;
+  padding-top: 30px;
+  width: 259px;
 }
 .datepicker-header {
   position: relative;
@@ -7433,7 +7440,7 @@ p {
 .ui-datepicker-calendar td {
   background: #EEEEEE;
   border: 1px solid #FFFFFF;
-  padding: 7px 10px;
+  padding: 2%;
   text-align: center;
 }
 .ui-datepicker-title {
@@ -7473,10 +7480,11 @@ td.today {
   margin-bottom: 20px;
 }
 .random-posts-img {
+  background: #787878;
   display: block;
   height: 175px;
+  max-width: 100%;
   width: 262px;
-  background: #787878;
 }
 .random-posts-tag-wrap {
   bottom: 53px;
@@ -7490,6 +7498,7 @@ td.today {
   background-color: #3C3C3C;
   bottom: 0;
   font-size: 12px;
+  max-width: 100%;
   padding: 8px 13px;
   position: relative;
   width: 262px;
@@ -7541,12 +7550,14 @@ td.today {
 }
 .lifestyle-post {
   width: 289px;
+  max-width: 100%;
 }
 .img-lifestyle-post {
   display: block;
   background-color: #ccc;
   height: 180px;
   width: 280px;
+  max-width: 100%;
 }
 .title-post {
   margin: 20px 0 25px 0;
@@ -7614,6 +7625,9 @@ a.posts-img {
 .light-dark:after {
   border-top: 14px solid #484848;
 }
+.carousel-posts-image img {
+  max-width: 100%;
+}
 .col-md-4.carousel-post:hover .carousel-posts-image-hover {
   opacity: 1;
   z-index: 1;
@@ -7644,6 +7658,9 @@ a.posts-img {
   padding: 40px 0;
   text-align: center;
 }
+.advertising-480 a img {
+  max-width: 100%;
+}
 /* Music */
 .music {
   position: relative;
@@ -7655,12 +7672,14 @@ a.posts-img {
 }
 .music-post {
   width: 289px;
+  max-width: 100%;
 }
 .img-music-post {
   display: block;
   background-color: #ccc;
   height: 180px;
   width: 280px;
+  max-width: 100%;
 }
 .light-green {
   background-color: #52ab0a;
@@ -7679,12 +7698,14 @@ a.posts-img {
 }
 .world-news-post {
   width: 289px;
+  max-width: 100%;
 }
 .img-world-news-post {
   display: block;
   background-color: #ccc;
   height: 180px;
   width: 280px;
+  max-width: 100%;
 }
 .dark-blue {
   background-color: #34466b;
@@ -7708,6 +7729,9 @@ a.posts-img {
 .tags:hover {
   background: #e84a4a;
   color: #ffffff;
+}
+.facebook-img {
+  max-width: 100%;
 }
 /* Football result */
 .results-block {
@@ -8025,83 +8049,6 @@ p.copyring {
 }
 .back-to-top a img {
   padding-left: 10px;
-}
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
-}
-.btn-group {
-  outline: none;
-}
-button:active,
-button:focus {
-  outline: none;
-}
-button::-moz-focus-inner {
-  border: 0;
-}
-a:active,
-a:focus {
-  outline: none;
-}
-a:hover {
-  cursor: pointer;
-  color: #e84a4a;
-  text-decoration: none;
-}
-input,
-textarea {
-  outline: none;
-}
-input:active,
-textarea:active {
-  outline: none;
-}
-:focus {
-  outline: none;
-}
-body {
-  font-family: "Roboto", Helvetica, Tahoma, Arial;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: Roboto;
-  font-weight: 500;
-}
-.color-technology {
-  background-color: #46d3ce;
-}
-.color-lifystyle {
-  background-color: #00b4ff;
-}
-.color-sports {
-  background-color: #ff0036;
-}
-.color-health {
-  background-color: #eb85a5;
-}
-/* Clearfix */
-.col-top-right:after,
-.post-of-the-day:after,
-.advertising-img-small-wrap:after,
-.posts li:after,
-.meta:after,
-.footer-bottom:after {
-  clear: both;
-  display: table;
-  content: "";
 }
 /* Header */
 .top-header {

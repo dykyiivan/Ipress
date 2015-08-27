@@ -426,6 +426,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .advertising-img-small-right {
 	.float-right;
 }
+@media(max-width: 1200px) {
+	.advertising-img-small-right {
+		float: left;
+		padding-top: 15px;
+	}
+}
 /* Widget Whats hot */
 .widget {
 	padding: 0 15px;
@@ -709,9 +715,10 @@ p {
 }
 /* Calendar */
 .datepicker-container {
-	width: 259px;
-	padding-top: 30px;
 	margin: auto;
+	max-width: 100%;
+	padding-top: 30px;
+	width: 259px;
 }
 .datepicker-header {
 	position: relative;
@@ -720,7 +727,7 @@ p {
 .ui-datepicker-calendar td {
 	background: #EEEEEE;
     border: 1px solid #FFFFFF;
-    padding: 7px 10px;
+    padding: 2%;
     text-align: center;
 }
 .ui-datepicker-title {
@@ -760,10 +767,11 @@ td.today {
 	margin-bottom: 20px;
 }
 .random-posts-img {
+	background: #787878;
 	display: block;
 	height: 175px;
+	max-width: 100%;
 	width: 262px;
-	background: #787878;
 }
 .random-posts-tag-wrap {
     bottom: 53px;
@@ -777,6 +785,7 @@ td.today {
     background-color: #3C3C3C;
     bottom: 0;
     font-size: 12px;
+    max-width: 100%;
     padding: 8px 13px;
     position: relative;
     width: 262px;
@@ -828,12 +837,14 @@ td.today {
 }
 .lifestyle-post {
 	width: 289px;
+	max-width: 100%;
 }
 .img-lifestyle-post {
 	display: block;
     background-color: #ccc;
     height: 180px;
     width: 280px;
+    max-width: 100%;
 }
 .title-post {
 	margin: 20px 0 25px 0;
@@ -905,6 +916,9 @@ a.posts-img {
 		border-top: 14px solid @light-dark;
 	}
 }
+.carousel-posts-image img {
+	max-width: 100%;
+}
 .col-md-4.carousel-post:hover .carousel-posts-image-hover {
     opacity: 1;
     z-index: 1;
@@ -934,6 +948,11 @@ a.posts-img {
 .advertising-480 {
     padding: 40px 0;
     text-align: center;
+    a {
+    	img {
+    		max-width: 100%;
+    	}
+    }
 }
 /* Music */
 .music {
@@ -983,6 +1002,9 @@ a.posts-img {
     	background: #e84a4a;
     	color: @white;
     }
+}
+.facebook-img {
+	max-width: 100%;
 }
 /* Football result */
 .results-block {
