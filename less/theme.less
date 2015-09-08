@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .advertising-img-small-wrap:after,
 .posts li:after,
 .meta:after,
-.footer-bottom:after {
+.footer-bottom:after,
+.widget-sidebar:before {
     clear: both;
     display: table;
     content: "";
@@ -254,26 +255,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #464040;
 }
-/*
 @media (min-width: 992px) {
-  .navbar-collapse.collapse {
-      display: block !important;
-      height: auto !important;
-      padding-bottom: 0;
-      overflow: visible !important;
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
   }
 }
 @media (min-width: 992px) {
-  .navbar-toggle {
-      display: none;
-  }
+	.navbar-collapse.collapse {
+	    display: block !important;
+	    height: auto !important;
+	    padding-bottom: 0;
+	    overflow: visible !important;
+	}
 }
 @media (min-width: 992px) {
   .navbar-header {
-      float: left;
+    float: left;
   }
 }
-*/
 /* Dropdown menu */
 .navbar-default .main-menu-dropdown {
 	background: #1d1e20;
@@ -412,7 +413,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 /* Advertising */
 .advertising-img-big {
-	padding:0 0 20px 15px;
+	padding-bottom: 20px;
 }
 .advertising-img-280 {
     max-width: 100%;
@@ -426,15 +427,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .advertising-img-small-right {
 	.float-right;
 }
-@media(max-width: 1200px) {
-	.advertising-img-small-right {
-		float: left;
-		padding-top: 15px;
-	}
-}
 /* Widget Whats hot */
 .widget {
 	padding: 0 15px;
+}
+.widget-sidebar {
+	padding: 0;
 }
 .widget-title-block {
 	position: relative;
@@ -714,11 +712,11 @@ p {
 	font-size: 14px;
 }
 /* Calendar */
+.ui-datepicker-calendar {
+    width: 100%;
+}
 .datepicker-container {
-	margin: auto;
-	max-width: 100%;
 	padding-top: 30px;
-	width: 259px;
 }
 .datepicker-header {
 	position: relative;
@@ -762,9 +760,14 @@ td.today {
 	background: #e84a4a;
 	color: @white;
 }
+td.other-month {
+    background-color: #fff;
+}
 /* Random posts */
 .random-posts {
 	margin-bottom: 20px;
+    display: inline-block;
+    max-width: 100%;
 }
 .random-posts-img {
 	background: #787878;
@@ -786,7 +789,7 @@ td.today {
     bottom: 0;
     font-size: 12px;
     max-width: 100%;
-    padding: 8px 13px;
+    padding: 8px 10px;
     position: relative;
     width: 262px;
     a {
